@@ -1,0 +1,97 @@
+ 
+
+<ion-content>
+    <div class="logo-cont">
+      <img src="assets/imgs/logo_head.png" />
+    </div>
+    <div id="print-wrapper">
+        <div class="lbl-cont">
+          <div style="text-align: center; font-size: 20px; font-weight: bold; margin-top: 20px;"><ion-label >PARABÉNS,</ion-label></div>
+          <div style="text-align: center; font-size: 20px; font-weight: bold; margin-top: 30px;"><ion-label >VOCÊ CONCLUIU O DIAGNÓSTICO DE SUA EMPRESA</ion-label></div>
+          <div style="margin-top: 15px; font-weight: 600; font-size: 15px; text-align: center;"><ion-label>RESULTADO SINTÉTICO</ion-label></div>
+        </div>
+        <div id="container" style="display: block;"	>
+        
+        </div>
+        
+        <div class="detail-lbl">
+          <div style="color: blue;text-align: center; font-size: 25px; margin-top: 15px;">{{resultText}}</div>
+          <div style="text-align: center; font-weight: bold; font-size:14px;margin-top: 10px;"><ion-label>Sua empresa está parcialmente adequada a LGPD.</ion-label></div>
+        </div>
+    </div>
+    <div id="result" style="padding: 16px;"></div>
+    <!-- <div id="pdf-cont">
+      <div class="logo-cont">
+        <img src="assets/imgs/logo_head.png" />
+      </div>
+      <div class='t-cont'>
+        <ion-label>VOCÊ ALCANÇOU O NÍVEL DE MARTURIDADE</ion-label>
+      </div>
+      <div class="c-cont">
+        <ion-textarea aria-readonly="true">
+          A TI reativa é considerada um dos niveis mais básicos de gerenciamento que uma empresa pode ter. Ela  ainda não possui um controle documentado de seus ambientes e processos.
+          Muitas empresas anida possuem apenas esse grau de maturidade e necessitam de diversos aprimoramentos.
+          <br>
+          O mode reativo funciona apenas lidando com contratempos pontuais do dia a dia da empresa, o que pode ser um problema, pois o suporte só é realizado quando as falhas já afetaram o sistema, podendo causar prejuizos maiores.
+          <br>
+          Neste nível, a TI passa a ter iniciativas para manter a infrasestrutura sob controle para aumentar a establilidade e disponibilidade de todos os componentes, Ela realiza o gerenciamento reativo de problemas e começa a fazer a gestão de mudanças, mas ainda sem contar com processos formais.
+        </ion-textarea>
+      </div>
+      <div class="i-cont">
+        <h4 style="color:rgb(25, 124, 216)">HARPY DATA VISIBLITY</h4>
+        <h5>www.harpy.net.br</h5>
+        <h6>comercial@harpy.net.br</h6>
+      </div>
+    </div> -->
+
+    <div class="pdf-container">
+      <ion-card class="card-body">
+        <ion-card-header class="card-header">
+          <ion-card-title>SOBRE A HARPY</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content class="card-content">
+          Somos uma consultoria especializada na Lei Geral de Proteção de Dados.
+          Nosso time é composto por profissionais das áreas de Tecnologia da Informação, Segurança, Jurídico, Mapeamento de Processos e Gestão de Projetos.
+        </ion-card-content>
+      </ion-card>
+      
+      <div class="hightlight">
+        <ion-label >DESTAQUES</ion-label>
+      </div>
+      <div class="banner-cont">
+        <img [src]="bannerLink" />
+      </div>
+      <!-- <div style="padding: 11px; text-align: center;">
+        <ion-label class="comment-lbl">Deseja receber GRÁTIS um relatório com o seu grau de maturidade?</ion-label>
+      </div> -->
+      <div class="contact-body">
+        <div class="head-cont" style="padding: 11px; text-align: center;">
+          <ion-label class="head-lbl">Desejo ser contactado pela Harpy</ion-label>
+        </div>
+        <form [formGroup]="infoForm" (ngSubmit)="accept(infoForm.value)">
+          <div class="name-cont">
+            <ion-label>Nome:</ion-label>
+            <ion-input formControlName="name" autocomplete="off"> </ion-input>
+        </div>
+          <div class="email-cont">
+              <ion-label>E-mail:</ion-label>
+              <ion-input formControlName="email" autocomplete="off"> </ion-input>
+              <mat-error *ngIf="infoForm.controls.email.errors?.required">E-mail é obrigatório</mat-error>
+              <mat-error *ngIf="infoForm.controls.email.hasError('invalidEmail')">Endereço de email invalido</mat-error>
+          </div>
+          <div class="phone-cont">
+              <ion-label>Telefone:</ion-label>
+              <ion-input formControlName="phoneNumber" placeholder="número de telefone" autocomplete="off" type="number"></ion-input>
+              <mat-error *ngIf="infoForm.controls.phoneNumber.errors?.required">Número de telefone obrigatório</mat-error>
+          </div>
+          <div class="btn-cont">
+            <ion-button class="btn" type="submit"><p>ENVIAR</p> </ion-button>
+          </div>
+      </form>
+      </div>
+      <!-- <div class="hightlight">
+        <ion-button  (click)="openModal()">SIM</ion-button>
+      </div> -->
+    </div>
+</ion-content>

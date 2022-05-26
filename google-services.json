@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "314829991968",
+    "firebase_url": "https://lgpd-diagnostico-default-rtdb.firebaseio.com",
+    "project_id": "lgpd-diagnostico",
+    "storage_bucket": "lgpd-diagnostico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314829991968:android:43f081a55d55f875300c45",
+        "android_client_info": {
+          "package_name": "com.harpy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314829991968-8ufoaf1qq2kgb3sst427jf1u4mooob1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7ATjlgjuM3wm6L3Z2ipi91lifExWU2L8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314829991968-8ufoaf1qq2kgb3sst427jf1u4mooob1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "314829991968-dj224ju011099tifa62vp4ikat367g02.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.harpy.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

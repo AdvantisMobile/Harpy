@@ -1,0 +1,26 @@
+
+<ion-content>
+  <div class="logo-cont">
+      <img src="assets/imgs/logo_head.png" />
+  </div>
+  <div class="title"><ion-label>IDENTIFICAÇÃO</ion-label></div>
+  <div class="size-cont">
+    <ion-label>INFORME O PORTE DA SUA EMPRESA</ion-label>
+    <ion-select okText="OK" cancelText="CANCELAR" [(ngModel)]="selectedQuanitty" interface="action-sheet" placeholder="Selecione...">
+      <ion-select-option *ngFor="let quantity of quantities" [value]="quantity.value" [value]="quantity.value">{{quantity.value}}</ion-select-option>
+    </ion-select>
+  </div>
+  <div class="size-cont">
+    <ion-label>QUAL A ÁREA DE ATUAÇÃO</ion-label>
+    <ion-select okText="OK" cancelText="CANCELAR" [(ngModel)]="selectedSetor" interface="action-sheet" placeholder="Selecione...">
+      <ion-select-option *ngFor="let setor of setors" [value]="setor.value">{{setor.value}}</ion-select-option>
+    </ion-select>
+  </div>
+ 
+  <div class="btn-cont">
+    <ion-row>
+      <ion-col><ion-button (click)="prev()" color="none"><span style="color:red">VOLTAR</span></ion-button></ion-col>
+      <ion-col><ion-button (click)="next()" color="none"><span style="color:green">AVANÇAR</span></ion-button></ion-col>
+    </ion-row>
+  </div>
+</ion-content>

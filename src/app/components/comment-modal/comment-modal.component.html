@@ -1,0 +1,25 @@
+ 
+<div id="securityModal" [hidden]="viewType !='result'">
+    <!-- <div class="title-cont"><h3 style=" font-weight: 600;">Informações de contato</h3></div> -->
+    <form [formGroup]="infoForm" (ngSubmit)="accept(infoForm.value)">
+        <div class="email-cont">
+            <!-- <ion-label>E-mail</ion-label> -->
+            <ion-input formControlName="email" placeholder="email" autocomplete="off"> </ion-input>
+            <mat-error *ngIf="infoForm.controls.email.errors?.required">E-mail é obrigatório</mat-error>
+            <mat-error *ngIf="infoForm.controls.email.hasError('invalidEmail')">Endereço de email invalido</mat-error>
+        </div>
+        <div class="phone-cont">
+            <!-- <ion-label>Número de telefone</ion-label> -->
+            <ion-input formControlName="phoneNumber" placeholder="número de telefone" autocomplete="off" type="number"></ion-input>
+            <mat-error *ngIf="infoForm.controls.phoneNumber.errors?.required">Número de telefone obrigatório</mat-error>
+        </div>
+        <div class="btn-cont">
+          <ion-button class="btn" type="submit"><p>ENVIAR</p> </ion-button>
+        </div>
+    </form>
+</div>
+<div  id="contactModal" [hidden]="viewType !='contact'">
+    <div style="text-align: center;font-size: 25px; color: red; margin-top: 10%"><ion-label>Obrigado pelas suas Informações Retornaremos o mails breve possivel</ion-label></div>
+    <div style="text-align: center;font-size: 20px; color: black; margin-top: 6%"><ion-label>Harpy - Data Visibility</ion-label></div>
+</div>
+ 

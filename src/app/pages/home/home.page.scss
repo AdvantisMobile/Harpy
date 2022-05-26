@@ -1,0 +1,51 @@
+.logo-cont{
+    margin-top: 30px;
+    padding: 11px;
+    img-col{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .lbl-col{
+        text-align: center;
+        display: flex;
+        font-size: 25px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.btn-cont{
+    padding: 11px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+}
+
+ion-button{
+    width: 150px;
+    --border-radius: 5px;
+}
+example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.example-radio-button {
+    margin: 5px;
+    width: 100%;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.card-cont{
+
+}
+.radio-btn{
+    margin: 30px;
+}

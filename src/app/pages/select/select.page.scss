@@ -1,0 +1,50 @@
+ion-content{
+    padding: 16px !important;
+    --background: var(--ion-background-color,#fafafa);
+}
+.logo-cont{
+    margin-top: 30px;
+    padding: 11px;
+    img-col{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .lbl-col{
+        text-align: center;
+        display: flex;
+        font-size: 25px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 11px;
+}
+.size-cont{
+    margin-top: 15px;
+    padding: 11px;
+    text-align: left;
+    margin-left: 10px;
+}
+.btn-cont{
+    padding: 11px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+}
+
+ion-button{
+    width: 120px;
+    --border-radius: 5px;
+}
+ion-select{
+    margin-top: 10px;
+    border:1px solid lightgray;
+}

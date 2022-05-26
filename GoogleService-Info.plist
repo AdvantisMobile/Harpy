@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>314829991968-dj224ju011099tifa62vp4ikat367g02.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.314829991968-dj224ju011099tifa62vp4ikat367g02</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCJ61yetomEZdLtIFoBEYiNQ7h_zhgiyuY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>314829991968</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.harpy.app</string>
+	<key>PROJECT_ID</key>
+	<string>lgpd-diagnostico</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lgpd-diagnostico.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:314829991968:ios:288f54eb79c8474b300c45</string>
+	<key>DATABASE_URL</key>
+	<string>https://lgpd-diagnostico-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

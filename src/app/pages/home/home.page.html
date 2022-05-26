@@ -1,0 +1,28 @@
+ 
+
+<ion-content>
+   <div class="logo-cont">
+      <img src="assets/imgs/logo_head.png" />
+   </div>
+   
+   <div  class="ion-padding">
+    <mat-card class='card-cont'>
+      <ion-label style="font-size: 18px; font-weight: bold; margin-bottom: 20px;"> {{cQuestion.question}}</ion-label>
+      <p>
+        <mat-radio-group [(ngModel)]="cQuestion.answered" fxFlex class="radio-btn">
+          <mat-radio-button [disabled]="result" class="example-radio-button" [value]="answer"
+            *ngFor="let answer of cQuestion.answers"  style="margin-bottom: 30px;">
+            {{answer}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <hr />
+    </mat-card>
+   </div>
+     
+  <div class="btn-cont">
+    <ion-row>
+      <ion-col><ion-button (click)="prev()" color="none"><span style="color:red">VOLTAR</span></ion-button></ion-col>
+      <ion-col><ion-button (click)="next()" color="none"><span style="color:green">AVANÇAR</span></ion-button></ion-col>
+    </ion-row>
+  </div>
+</ion-content>
